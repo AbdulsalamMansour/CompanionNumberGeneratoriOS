@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mobileNumberTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
 
-
+    @IBAction func onInserNumberClick(_ sender: Any) {
+        print(mobileNumberTextField.text)
+    }
+    
 }
 

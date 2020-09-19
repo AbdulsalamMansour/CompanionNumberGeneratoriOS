@@ -73,7 +73,7 @@ class ViewController: UIViewController {
             let saveRequest = CNSaveRequest()
             
             let prefix = insertedNumber.dropLast(3)
-            for suffix in 1...1000 {
+            for suffix in 0...999 {
                 let contact = CNMutableContact()
                 contact.familyName = "\(prefix)\(String(format: "%03d", suffix))"
                 contact.phoneNumbers = [CNLabeledValue(

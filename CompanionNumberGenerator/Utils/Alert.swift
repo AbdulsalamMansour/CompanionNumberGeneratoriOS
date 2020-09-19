@@ -19,7 +19,7 @@ struct Alert {
     }
     
     
-    static func showIncompleteFormAlert(on vc: UIViewController, message: String) {
+    static func showAlert(on vc: UIViewController, message: String) {
         showBasicAlert(on: vc, with: "Alert !", message: message)
     }
     
